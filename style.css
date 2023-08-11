@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(30, 25, 25);
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 16px;
+    gap: 16px;
+}
+.item{
+    height: 150px;
+    width: 80%;
+    background: linear-gradient(90deg, #ff0000, #1427ff);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 32px;
+    transition: 2s;
+}
+.texto{
+    color: aliceblue;
+    font-size: 64px;
+}
+.forma{
+    width: 100px;
+    height: 100px;
+    border: solid 3px white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.amarelo{
+    background-color: yellow;
+    border: none;
+}
+.circulo{
+    border-radius: 50%;
+}
+.girar{
+    animation: girar 5s infinite linear;
+}
+@keyframes girar {
+
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.oec{
+    transform: translateY(-50px);
+    width: 200px;
+    height: 200px;
+    border: none;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://media.tenor.com/R5EadsLDE8QAAAAd/oec-odd-eye-circle.gif");
+}
+
+#forma5{
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+.mewoimg{
+    background-image: url(./img/mewo.gif);
+    background-color: white;
+}
+#forma6{
+     transition: 0.1s;
+}
+.endgame{
+    position: absolute fixed;
+    place-self: center;
+    transform: scale(30);
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/6bcd0723417613.563230f5d81d5.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.neve{
+    background-color: black;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e5cfcbe3-c4c4-4faa-ad57-3bdea351ab2b/d89z7ri-4b2c6162-b275-4f3d-8024-c9ae64264c34.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U1Y2ZjYmUzLWM0YzQtNGZhYS1hZDU3LTNiZGVhMzUxYWIyYlwvZDg5ejdyaS00YjJjNjE2Mi1iMjc1LTRmM2QtODAyNC1jOWFlNjQyNjRjMzQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.dipSuwPObAQd2P5iUxuXrg_UTO0qlsiLTcoUOq3r-Vw");
+}
+
+.mover{
+    border: none;
+    transform: translate(100%);
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/011/894/177/small/text-cloud-bubble-thinking-with-transparent-background-png.png");
+    background-position: center;
+    background-size: cover;
+}
+
